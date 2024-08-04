@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Kodam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <img src="profile.jpg" alt="Profile" class="profile-pic" onclick="showProfileModal()">
+    </div>
+    <div class="container">
+        <h1>Cek Kodam Anda</h1>
+        <input type="text" id="name" placeholder="Masukkan Nama Anda">
+        <button onclick="checkKodam()">Cek Kodam</button>
+        <div id="result"></div>
+    </div>
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Nama Anda belum diisi</p>
+            <button class="modal-btn" onclick="closeModal()">Ok</button>
+        </div>
+    </div>
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProfileModal()">&times;</span>
+            <img src="profile.jpg" alt="Profile" class="profile-modal-pic">
+            <p>By: Karl X ChatGPT</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
